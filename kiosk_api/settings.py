@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'kiosk_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3.31.1',
         'NAME': BASE_DIR / 'db.sqlite3.31.1',
     }
 }
