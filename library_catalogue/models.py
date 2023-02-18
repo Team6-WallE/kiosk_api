@@ -9,7 +9,7 @@ class BookTable(models.Model):
     isbn = models.CharField(max_length=20)
 
     def __str__(self):
-        return str(self.book_id) + " " + str(self.book_name)
+        return str("hello World")
     
 class MemberTable(models.Model):
     member_id = models.AutoField(primary_key=True)
