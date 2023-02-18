@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(#y9z2*exhl(+#b@41beg2nzaazvhwjzm5qt96w_42v)^#xrm!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,13 +78,12 @@ WSGI_APPLICATION = 'kiosk_api.wsgi.application'
 
 # DATABASES = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'db.sqlite3',
-#     }
-# }
-DATABASES = {}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
