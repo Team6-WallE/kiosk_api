@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime, timedelta
+from pysqlite3 import dbapi2 as Database
 
 # Create your models here.
 class BookTable(models.Model):
